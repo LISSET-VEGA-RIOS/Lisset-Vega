@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instroduccion a JS</title>
+</head>
+<body>
+    Usuario:
+    <input id="entredaUsuario" type="text" name="entrada" placeholder="usuario">
+    <button id="mostrarUsuario">
+        Loggin
+
+    </button>
+
+    <script src="text/javascript">
+        document.getElementById("Mostrar usuario").onclick = function(){
+            var nombre= document.getElementById("EntradaUsuario").value;
+            document.getElementById("logginParrafo").innerHTML = "Bienvenido" + nombre;
+        }
+    </script>
+
+    <p id="logginParrafo">
+
+    </p>
+
+    <p id="parrafoVacio">
+
+    </p>
+
+    <button id="generarTexto">
+        Generar Texto
+    </button>
+    <script type="text/javascript">
+        document.getElementById("generarTexto").onclick = function(){
+                document.getElementById('parrafoVacio').innerHTML = "<h1> Texto generado desde JS"
+        }
+
+    </script>
+    
+    <p id="parrafoConEstilos">
+        Este es el texto que cambiara de estilos
+    </p>
+
+    <button id="cambiarEstilos">
+
+        click para cambiar estilos
+
+    </button>
+
+    <script type="text/javascript">
+        document.getElementById("CambiarEstilos").onclick = function(){
+            document.getElementById('parrafoConEstilos').style.color ="red";
+            document.getElementById('parrafoConEstilos').style.fontSize ="50px";
+        }
+    </script>
+
+
+</body>
+</html>
